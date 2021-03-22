@@ -1,5 +1,4 @@
-# Edge and Identity Preserving Network for Face Super-Resolution (EIPNet)   
-## - Neurocomputing Journal 2021 
+# Edge and Identity Preserving Network for Face Super-Resolution (EIPNet)     - Neurocomputing Journal 2021 
 
 ## Abstract
 
