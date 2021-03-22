@@ -17,8 +17,11 @@ Clone this repo.
 Install requirements:
 
   tensorflow==1.14.0    
+  
   numpy    
+  
   matplotlib    
+  
   opencv-python
 
 
