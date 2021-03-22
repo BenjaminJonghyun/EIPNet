@@ -16,13 +16,13 @@ Clone this repo.
 
 Install requirements:
 
-  tensorflow==1.14.0    
-  
-  numpy    
-  
-  matplotlib    
-  
+  tensorflow==1.14.0
+  numpy
+  matplotlib
   opencv-python
 
+## Dataset
+
+This network is pre-trained on [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) dataset. After downloading this dataset, unzip and save test images in a 'datasets' folder. 
 
 
