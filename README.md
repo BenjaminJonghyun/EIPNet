@@ -1,4 +1,5 @@
-# Edge and Identity Preserving Network for Face Super-Resolution (EIPNet) - Neurocomputing Journal 2021 
+# Edge and Identity Preserving Network for Face Super-Resolution (EIPNet)   
+## - Neurocomputing Journal 2021 
 
 ## Abstract
 
@@ -33,7 +34,7 @@ This network is pretrained on [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/Cele
 
 After preparing test images, the reconstructed images can be obtained using the pretrained model.
 
-1. Download pretrained weight from [Google Drive](https://drive.google.com/file/d/1393OZ8ZIShFQi3IA18meqokFan0zRjm4/view?usp=sharing) and upzip this `checkpoint.zip` in the `./checkpoint` folder.
+1. Creat a `checkpoint` folder. Download pretrained weight from [Google Drive](https://drive.google.com/file/d/1393OZ8ZIShFQi3IA18meqokFan0zRjm4/view?usp=sharing) and upzip this `checkpoint.zip` in the `./checkpoint` folder.
 2. Run `test.py` to generate HR images, which will be saved in `./CelebA`. Save path and details can be edited in `base_options.py`.
 
 ## Training a new model on personal dataset
