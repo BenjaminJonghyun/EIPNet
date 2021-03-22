@@ -13,7 +13,13 @@ Face super-resolution (SR) has become an indispensable function in security solu
 ## Installation
 
 Clone this repo.
-git clone https://github.com/BenjaminJonghyun/EIPNet.git
-cd EIPNet/
+
+Install requirements:
+
+tensorflow==1.14.0
+numpy
+matplotlib
+opencv-python
+
 
 
