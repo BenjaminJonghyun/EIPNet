@@ -14,7 +14,6 @@ Face super-resolution (SR) has become an indispensable function in security solu
 
 Clone this repo.
 git clone https://github.com/BenjaminJonghyun/EIPNet.git
----
 cd EIPNet/
----
+
 
