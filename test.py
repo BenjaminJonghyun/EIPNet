@@ -1,20 +1,22 @@
 import numpy as np
 import tensorflow as tf
 from networks import generator
-from base_options import BaseOptions
+from options.test_options import TestOptions
 from tqdm import tqdm
 import os
 import cv2
 import glob
 
-opt = BaseOptions().parse()
-save_path = opt.save_path
-checkpoint_path = opt.checkpoint_path
+opt = TestOptions().parse()
+save_path = os.path.join(opt.checkpoint_path, opt.save_path, opt.image_save_path)
+if not os.path.exists(save_path):
+    os.makedirs(save_path)
+checkpoint_path = opt.weight_path
 
 class get_evaluation(object):
     def __init__(self, opt):
         self.opt = opt
-        self.test_list = glob.glob(os.path.join(self.opt.data_path, '*.jpg'))
+        self.test_list = glob.glob(os.path.join(self.opt.test_path, '*.jpg'))
 
 
     def open_image(self, path, width, height, angle, isDown=True, isCrop=False, isResize=True, isflip=False, isRotate=False):
@@ -91,6 +93,3 @@ saver.restore(sess, save_file)
 evaluation = get_evaluation(opt)
 evaluation.get_psnr_ssim()
 print('\n HR images are generated !')
-
-
-
