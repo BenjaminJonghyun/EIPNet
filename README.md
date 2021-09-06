@@ -40,7 +40,7 @@ After preparing test images, the reconstructed images can be obtained using the 
 We update `train.py` to train EIPNet on personal dataset.
 
 1. Save train and test images in `./datasets/train` and `./datasets/test` folders, respectively.
-2. Check your personal setting (i.e., implementation details, save path, and so on) in `./options/base_options.py` and `./options/train_options/py`.
+2. Check your personal setting (i.e., implementation details, save path, and so on) in `./options/base_options.py` and `./options/train_options.py`.
 3. Run `train.py` or type 'python train.py' in your terminal.
 
 ## License
