@@ -33,11 +33,15 @@ This network is pretrained on [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/Cele
 
 After preparing test images, the reconstructed images can be obtained using the pretrained model.
 
-1. Creat a `checkpoint` folder. Download pretrained weight from [Google Drive](https://drive.google.com/file/d/1393OZ8ZIShFQi3IA18meqokFan0zRjm4/view?usp=sharing) and upzip this `checkpoint.zip` in the `./checkpoint` folder.
-2. Run `test.py` to generate HR images, which will be saved in `./CelebA`. Save path and details can be edited in `base_options.py`.
+1. Creat a `checkpoint/CelebA` folder. Download pretrained weight from [Google Drive](https://drive.google.com/file/d/1393OZ8ZIShFQi3IA18meqokFan0zRjm4/view?usp=sharing) and upzip this `checkpoint.zip` in the `./checkpoint/CelebA` folder.
+2. Run `test.py` to generate HR images, which will be saved in `./checkpoint/CelebA/result`. Save path and details can be edited in `./options/base_options.py` and `./options/test_options.py`.
 
 ## Training a new model on personal dataset
-Will be released soon.
+We update `train.py` to train EIPNet on personal dataset.
+
+1. Save train and test images in `./datasets/train` and `./datasets/test` folders, respectively.
+2. Check your personal setting (i.e., implementation details, save path, and so on) in `./options/base_options.py` and `./options/train_options/py`.
+3. Run `train.py` or type 'python train.py' in your terminal.
 
 ## License
 All right reserved. Licensed under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode) (Attribution-NonCommercial-NoDerivatives 4.0 International). The code is released for academic research use only.
